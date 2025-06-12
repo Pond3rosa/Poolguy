@@ -3,292 +3,239 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pittman Heating & Cooling - Expert HVAC Services in Spanish Fork, UT</title>
+    <title>Bellyflop Pool Service and Repair - Expert Pool Care</title>
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #f8fafc; /* Light Slate 50 */
-            color: #1e293b; /* Slate 900 */
-        }
-        .container {
-            max-width: 1200px;
-        }
-        /* Custom styles for review section */
-        .review-card {
-            background-color: #ffffff;
-            border-radius: 1rem; /* rounded-xl */
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
-            padding: 2rem; /* p-8 */
-            transition: all 0.3s ease-in-out; /* transition duration-300 */
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between; /* Distribute space between content */
-        }
-        .review-card:hover {
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* hover:shadow-lg */
-            transform: translateY(-0.25rem); /* hover:-translate-y-1 */
-        }
-        .stars {
-            color: #facc15; /* yellow-400 - kept for star rating visibility */
+            background-color: #f0f9ff; /* Light blue background */
         }
     </style>
 </head>
-<body class="antialiased">
-    <!-- Header Section -->
-    <header class="bg-white shadow-sm py-4 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto flex justify-between items-center">
-            <!-- Logo and Company Name -->
-            <a href="#" class="flex items-center space-x-2">
-                <!-- Replace this placeholder image with your actual logo -->
-                <img src="https://placehold.co/40x40/BFDBFE/1E40AF?text=HVAC" alt="Pittman Heating & Cooling Logo" class="h-10 w-10 rounded-full">
-                <span class="text-xl sm:text-2xl font-bold text-blue-700 rounded-md p-2 hover:bg-blue-50 transition duration-300">Pittman Heating & Cooling</span>
-            </a>
-
-            <!-- Phone Number (Desktop) -->
-            <div class="hidden md:flex items-center space-x-4">
-                <a href="tel:8015926671" class="text-blue-700 hover:text-blue-900 font-semibold text-lg transition duration-300">
-                    Call Us: 801-592-6671
-                </a>
-            </div>
-
-            <!-- Mobile Menu Button -->
-            <button id="mobile-menu-button" class="md:hidden text-gray-600 hover:text-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 rounded-md p-2">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-                </svg>
-            </button>
+<body class="text-gray-800">
+    <!-- Header/Navigation -->
+    <header class="bg-blue-800 text-white shadow-lg p-4 sticky top-0 z-50 rounded-b-xl">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between">
+            <h1 class="text-3xl font-bold mb-2 md:mb-0">Bellyflop Pool Service</h1>
+            <nav>
+                <ul class="flex space-x-6">
+                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">About Us</a></li>
+                    <li><a href="#why-choose-us" class="hover:text-blue-200 transition duration-300">Why Choose Us</a></li>
+                    <li><a href="#services" class="hover:text-blue-200 transition duration-300">Services</a></li>
+                    <li><a href="#testimonials" class="hover:text-blue-200 transition duration-300">Testimonials</a></li>
+                    <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-
-        <!-- Mobile Navigation (Hidden by default) -->
-        <nav id="mobile-menu" class="md:hidden mt-4 space-y-2 px-2 pb-3 hidden">
-            <a href="#" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Home</a>
-            <a href="#services" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Services</a>
-            <a href="#testimonials" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Testimonials</a>
-            <a href="#about" class="block text-blue-700 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">About Us</a>
-            <a href="#contact" class="block text-gray-600 hover:text-blue-700 font-medium transition duration-300 rounded-md p-2 hover:bg-gray-50">Contact</a>
-            <a href="tel:8015926671" class="block text-blue-700 hover:text-blue-900 font-semibold transition duration-300 rounded-md p-2 hover:bg-gray-50">Call Us: 801-592-6671</a>
-        </nav>
     </header>
 
     <!-- Hero Section -->
-    <section class="relative bg-gradient-to-r from-blue-700 to-blue-900 text-white py-20 px-4 sm:px-6 lg:px-8 rounded-b-xl shadow-lg overflow-hidden">
-        <!-- Hero Background Image - Replace this placeholder with an image of an HVAC unit or technician -->
-        <img src="https://placehold.co/1600x600/1E40AF/BFDBFE?text=HVAC+Service" alt="HVAC Technician working on a unit" class="absolute inset-0 w-full h-full object-cover opacity-30">
-        <div class="container mx-auto text-center relative z-10">
-            <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-4 leading-tight">
-                Expert Heating & Cooling Services
-            </h1>
-            <p class="text-lg sm:text-xl mb-8 max-w-2xl mx-auto opacity-90">
-                Reliable HVAC solutions for your home or business in Spanish Fork, UT, and surrounding areas.
+    <section class="relative bg-gradient-to-r from-blue-600 to-blue-400 text-white py-20 px-4 flex items-center justify-center rounded-b-3xl shadow-xl">
+        <div class="container mx-auto text-center">
+            <h2 class="text-5xl md:text-6xl font-extrabold mb-6 leading-tight">Dive Into Crystal Clear Waters!</h2>
+            <p class="text-xl md:text-2xl mb-8 max-w-2xl mx-auto">
+                Your premier choice for reliable and affordable pool service and repair in Waddell, AZ.
             </p>
-            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                <a href="tel:8015926671" class="bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Call Now: 801-592-6671</a>
-                <a href="#contact" class="bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-700 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Get a Free Estimate</a>
+            <a href="#contact" class="inline-block bg-white text-blue-700 font-bold py-4 px-8 rounded-full shadow-lg hover:bg-blue-100 transition duration-300 transform hover:scale-105">
+                Get a Free Estimate!
+            </a>
+        </div>
+        <!-- Abstract wave elements for visual appeal -->
+        <div class="absolute bottom-0 left-0 w-full h-1/3 bg-white opacity-20 transform skew-y-1 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-full h-1/3 bg-white opacity-10 transform -skew-y-2 -translate-y-1/3"></div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="container mx-auto py-16 px-4">
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center">
+            <h3 class="text-4xl font-bold text-blue-700 mb-6">About Bellyflop Pool Service</h3>
+            <img src="pool1.jpg" alt="Bellyflop Pool Service Team" class="w-full max-w-md mx-auto rounded-lg shadow-md mb-8 object-cover aspect-video">
+            <p class="text-lg leading-relaxed mb-6">
+                At Bellyflop Pool Service and Repair, we're dedicated to keeping your pool sparkling clean and running efficiently,
+                allowing you to enjoy your backyard oasis worry-free. With years of experience serving the Waddell, AZ area,
+                we pride ourselves on exceptional service, attention to detail, and a steadfast commitment to customer satisfaction.
+            </p>
+            <p class="text-lg leading-relaxed mb-6">
+                Our mission is simple: to provide the highest quality pool maintenance and repair services, ensuring the longevity
+                and pristine condition of your pool. We believe a clean pool is a happy pool, and we strive to make that a reality
+                for every client. Our team of certified professionals is knowledgeable, friendly, and always ready to go the extra mile.
+            </p>
+            <div class="flex items-center justify-center text-yellow-500 text-2xl mb-4">
+                <span class="mr-2">Our Rating:</span>
+                <!-- 5-star rating -->
+                &#9733;&#9733;&#9733;&#9733;&#9733; (5 Stars!)
             </div>
-            <p class="mt-8 text-sm opacity-80">
-                Located at: 183 N 1280 E, Spanish Fork, UT 84660
-            </p>
+            <p class="text-md text-gray-600">Based on our satisfied customers.</p>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section id="why-choose-us" class="container mx-auto py-16 px-4">
+        <h3 class="text-4xl font-bold text-center text-blue-700 mb-10">Why Choose Bellyflop?</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Reason 1: Experienced Professionals -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 flex flex-col items-center text-center hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <div class="text-blue-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-users">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+                    </svg>
+                </div>
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3">Experienced Professionals</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    Our team consists of highly trained and experienced pool technicians who know how to handle any pool challenge.
+                </p>
+            </div>
+            <!-- Reason 2: Affordable & Transparent Pricing -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 flex flex-col items-center text-center hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <div class="text-blue-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-dollar-sign">
+                        <line x1="12" x2="12" y1="2" y2="22"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+                    </svg>
+                </div>
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3">Affordable & Transparent Pricing</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    We offer competitive rates with no hidden fees. Quality service doesn't have to break the bank.
+                </p>
+            </div>
+            <!-- Reason 3: Cutting-Edge Solutions -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 flex flex-col items-center text-center hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <div class="text-blue-500 mb-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-lightbulb">
+                        <path d="M15 14c.2-1 .7-1.7 1.5-2.5 1-.9 1.5-2.2 1.5-3.5A6 6 0 0 0 6 8c0 1.3.5 2.6 1.5 3.5.8.7 1.3 1.5 1.5 2.5"/><path d="M9 18h6"/><path d="M10 22h4"/><path d="M4.93 18.93a4 4 0 0 1-.53-6.25"/><path d="M19.07 18.93a4 4 0 0 0 .53-6.25"/>
+                    </svg>
+                </div>
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3">Cutting-Edge Solutions</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    Utilizing the latest techniques and eco-friendly products for efficient and effective pool care.
+                </p>
+            </div>
         </div>
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="py-16 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">Our HVAC Services</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Service Card 1: Heating Repair & Installation -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-blue-600 mb-4">
-                        <!-- Replace with a heating icon -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=Heat" alt="Heating Icon" class="w-12 h-12 mx-auto rounded-full">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Heating Repair & Installation</h3>
-                    <p class="text-gray-600 text-center">From furnace repairs to new heating system installations, we keep you warm.</p>
-                </div>
-
-                <!-- Service Card 2: AC Repair & Installation -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-blue-600 mb-4">
-                        <!-- Replace with an AC icon -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=AC" alt="AC Icon" class="w-12 h-12 mx-auto rounded-full">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">AC Repair & Installation</h3>
-                    <p class="text-gray-600 text-center">Stay cool with our expert air conditioning repair, maintenance, and installation services.</p>
-                </div>
-
-                <!-- Service Card 3: HVAC Maintenance -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-blue-600 mb-4">
-                        <!-- Replace with a maintenance icon -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=Maint" alt="Maintenance Icon" class="w-12 h-12 mx-auto rounded-full">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Preventative Maintenance</h3>
-                    <p class="text-gray-600 text-center">Regular tune-ups to extend the life of your system and ensure peak efficiency.</p>
-                </div>
-
-                <!-- Service Card 4: Indoor Air Quality -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-blue-600 mb-4">
-                        <!-- Replace with an air quality icon -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=Air" alt="Air Quality Icon" class="w-12 h-12 mx-auto rounded-full">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Indoor Air Quality</h3>
-                    <p class="text-gray-600 text-center">Solutions for cleaner, healthier air in your home or office.</p>
-                </div>
-
-                <!-- Service Card 5: Emergency Services -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-blue-600 mb-4">
-                        <!-- Replace with an emergency icon -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=24/7" alt="Emergency Icon" class="w-12 h-12 mx-auto rounded-full">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Emergency Services</h3>
-                    <p class="text-gray-600 text-center">24/7 rapid response for urgent heating and cooling issues.</p>
-                </div>
-
-                <!-- Service Card 6: Commercial HVAC -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1">
-                    <div class="text-blue-600 mb-4">
-                        <!-- Replace with a commercial building icon -->
-                        <img src="https://placehold.co/60x60/BFDBFE/1E40AF?text=Comm" alt="Commercial Icon" class="w-12 h-12 mx-auto rounded-full">
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3 text-center">Commercial HVAC</h3>
-                    <p class="text-gray-600 text-center">Specialized services for businesses of all sizes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Us Section (Detailed content now on landing page) -->
-    <section id="about" class="py-16 px-4 sm:px-6 lg:px-8 bg-gray-100">
-        <div class="container mx-auto max-w-4xl">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">About Pittman Heating & Cooling</h2>
-
-            <div class="bg-white p-8 md:p-12 rounded-xl shadow-lg">
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    At Pittman Heating and Cooling, we are completely dedicated to delivering high-quality HVAC services to homeowners and businesses throughout Spanish Fork, Utah, and more. Known for reliable service, professional workmanship, and a strong commitment to customer satisfaction.
-                </p>
-                <p class="text-lg text-gray-700 leading-relaxed mb-6">
-                    From heating and air conditioning to ventilation solutions, we approach every job with integrity, precision, and care. Our team of experienced technicians is equipped to handle all your HVAC needs, ensuring your indoor environment is comfortable and healthy year-round.
-                </p>
-                <p class="text-lg text-gray-700 leading-relaxed">
-                    With a focus on long-term comfort and dependable performance, we stand behind our work with a quality guarantee and a reputation built on trust. Choose Pittman Heating & Cooling for service you can rely on.
+    <section id="services" class="container mx-auto py-16 px-4">
+        <h3 class="text-4xl font-bold text-center text-blue-700 mb-10">Our Comprehensive Services</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service Card 1: Routine Cleaning -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3 text-center">Routine Pool Cleaning</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    Our routine cleaning services ensure your pool remains spotless and inviting. This includes comprehensive skimming
+                    of debris, thorough vacuuming of the pool floor, meticulous brushing of walls and tiles, and emptying of all
+                    baskets (skimmer and pump). We leave no leaf unturned!
                 </p>
             </div>
-
-            <!-- Optional: Add an image related to "About Us" here -->
-            <div class="mt-12 text-center">
-                <img src="https://placehold.co/800x400/BFDBFE/1E40AF?text=Our+Team+or+Facility" alt="Pittman Heating and Cooling Team or Facility" class="rounded-xl shadow-md mx-auto w-full max-w-2xl h-auto object-cover">
-                <p class="text-gray-500 text-sm mt-4">
-                    (Replace this placeholder with an image of your team, facility, or a relevant service photo.)
+            <!-- Service Card 2: Chemical Balancing -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3 text-center">Precise Chemical Balancing</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    Achieve optimal water quality with our precise chemical testing and balancing. We adjust chlorine, pH, alkalinity,
+                    and calcium hardness levels to prevent algae growth, skin irritation, and equipment damage, ensuring a safe
+                    and sparkling swimming environment.
+                </p>
+            </div>
+            <!-- Service Card 3: Equipment Repair -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3 text-center">Expert Equipment Repair</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    From minor fixes to major overhauls, our technicians are skilled in diagnosing and repairing all types of pool equipment.
+                    This includes pumps, filters, heaters, automated cleaning systems, and lighting, ensuring your pool's systems
+                    run efficiently.
+                </p>
+            </div>
+            <!-- Service Card 4: Green Pool Recovery -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3 text-center">Green Pool Recovery</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    Don't let a green pool ruin your summer! Our specialized green pool recovery service utilizes powerful treatments
+                    and thorough cleaning techniques to transform your murky, algae-filled pool back into a clear, inviting blue oasis.
+                </p>
+            </div>
+            <!-- Service Card 5: Filter Cleaning -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3 text-center">Filter Cleaning & Maintenance</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    A clean filter is crucial for clear water. We provide thorough cleaning and backwashing of all filter types (cartridge,
+                    DE, sand) to remove accumulated debris and ensure optimal filtration efficiency, extending the life of your equipment.
+                </p>
+            </div>
+            <!-- Service Card 6: Seasonal Services -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
+                <h4 class="text-2xl font-semibold text-blue-800 mb-3 text-center">Seasonal Services</h4>
+                <p class="text-gray-700 leading-relaxed">
+                    Prepare your pool for the changing seasons with our professional opening and closing services. We ensure your pool
+                    is properly winterized to prevent damage and efficiently opened for a seamless transition into swimming season.
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Testimonials Section -->
-    <section id="testimonials" class="py-16 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto">
-            <h2 class="text-3xl sm:text-4xl font-bold text-center mb-12 text-gray-800">What Our Customers Say</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Testimonial Card 1 (Jeff Goeders) -->
-                <div class="review-card">
-                    <div>
-                        <div class="text-center mb-4">
-                            <span class="stars text-3xl">★★★★★</span>
-                        </div>
-                        <p class="text-gray-700 italic mb-4 text-center">
-                            "Dan is terrific. He responded quickly, came right over, and was able to quickly diagnose and fix an issue with our furnace after another company failed to find the issue. He explains everything he's doing and why. Highly recommend you give Dan a call if you have furnace issues."
-                        </p>
-                    </div>
-                    <p class="text-gray-600 font-medium text-right mt-auto">- Jeff Goeders, Local Guide</p>
-                </div>
-
-                <!-- Testimonial Card 2 (Austin Garrett) -->
-                <div class="review-card">
-                    <div>
-                        <div class="text-center mb-4">
-                            <span class="stars text-3xl">★★★★★</span>
-                        </div>
-                        <p class="text-gray-700 italic mb-4 text-center">
-                            "Dan is about the most trustworthy, caring guy I've ever done business with. Would ABSOLUTELY recommend to anyone with HVAC issues! He knows what he's talking about and genuinely cares about the well being of those who he deals with!"
-                        </p>
-                    </div>
-                    <p class="text-gray-600 font-medium text-right mt-auto">- Austin Garrett</p>
-                </div>
-
-                <!-- Testimonial Card 3 (Alice Ferrell) -->
-                <div class="review-card">
-                    <div>
-                        <div class="text-center mb-4">
-                            <span class="stars text-3xl">★★★★★</span>
-                        </div>
-                        <p class="text-gray-700 italic mb-4 text-center">
-                            "Dan is amazing! He is so knowledgeable and friendly. He was quick to answer our call and took great care of us. I highly recommend him!"
-                        </p>
-                    </div>
-                    <p class="text-gray-600 font-medium text-right mt-auto">- Alice Ferrell</p>
-                </div>
+    <section id="testimonials" class="container mx-auto py-16 px-4 bg-blue-50 rounded-2xl shadow-inner">
+        <h3 class="text-4xl font-bold text-center text-blue-700 mb-10">What Our Customers Say</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <!-- Testimonial 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition duration-300">
+                <p class="text-lg italic text-gray-700 mb-4">
+                    "Bellyflop Pool Service has been an absolute lifesaver! My pool has never looked better, and their technicians are always so professional and friendly. Highly recommend!"
+                </p>
+                <p class="font-semibold text-blue-800 text-right">- Sarah P., Waddell, AZ</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Call to Action Section -->
-    <section class="bg-blue-700 text-white py-16 px-4 sm:px-6 lg:px-8 rounded-xl mx-4 sm:mx-auto max-w-6xl shadow-xl">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-6">Need HVAC Service? We're Here to Help!</h2>
-            <p class="text-lg mb-8 opacity-90">
-                Don't let heating or cooling issues disrupt your comfort. Contact us today for reliable and efficient service.
-            </p>
-            <a href="tel:8015926671" class="bg-white text-blue-700 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition duration-300 transform hover:scale-105">Call Pittman Heating & Cooling: 801-592-6671</a>
+            <!-- Testimonial 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition duration-300">
+                <p class="text-lg italic text-gray-700 mb-4">
+                    "I used to struggle with green water, but Bellyflop fixed it in no time. Their repair service is top-notch, and their prices are very fair. A fantastic local business!"
+                </p>
+                <p class="font-semibold text-blue-800 text-right">- Mark T., Phoenix, AZ</p>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition duration-300">
+                <p class="text-lg italic text-gray-700 mb-4">
+                    "Reliable, efficient, and always punctual. Bellyflop Pool Service keeps my pool sparkling without any hassle. Truly the best pool service in the area."
+                </p>
+                <p class="font-semibold text-blue-800 text-right">- Emily R., Goodyear, AZ</p>
+            </div>
+            <!-- Testimonial 4 -->
+            <div class="bg-white p-6 rounded-2xl shadow-lg border border-blue-100 hover:shadow-xl transition duration-300">
+                <p class="text-lg italic text-gray-700 mb-4">
+                    "The team at Bellyflop is incredibly thorough. They diagnosed an issue my previous service missed and fixed it quickly. My pool has never been healthier!"
+                </p>
+                <p class="font-semibold text-blue-800 text-right">- David L., Surprise, AZ</p>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="py-16 px-4 sm:px-6 lg:px-8">
-        <div class="container mx-auto text-center">
-            <h2 class="text-3xl sm:text-4xl font-bold mb-12 text-gray-800">Contact Us</h2>
-            <div class="flex flex-col md:flex-row justify-center items-center">
-                <!-- Contact Info -->
-                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300 transform hover:-translate-y-1 w-full md:w-1/2 lg:w-1/3">
-                    <h3 class="text-2xl font-semibold text-gray-800 mb-4">Get in Touch</h3>
-                    <p class="text-gray-700 mb-2">
-                        <strong class="text-blue-700">Phone:</strong> <a href="tel:8015926671" class="text-blue-700 hover:underline">801-592-6671</a>
-                    </p>
-                    <p class="text-gray-700 mb-2">
-                        <strong class="text-blue-700">Address:</strong> 183 N 1280 E, Spanish Fork, UT 84660
-                    </p>
-                    <!-- Placeholder for map or directions link -->
-                    <a href="https://www.google.com/maps/search/?api=1&query=183+N+1280+E,+Spanish+Fork,+UT+84660" target="_blank" rel="noopener noreferrer" class="text-blue-700 hover:underline mt-4 inline-block">
-                        Get Directions
-                    </a>
-                </div>
+    <section id="contact" class="container mx-auto py-16 px-4">
+        <div class="bg-white p-8 rounded-2xl shadow-xl text-center">
+            <h3 class="text-4xl font-bold text-blue-700 mb-6">Contact Us</h3>
+            <p class="text-lg leading-relaxed mb-6">
+                Ready for a perfectly maintained pool? Get in touch with us today for a free consultation and estimate!
+                We look forward to helping you enjoy your beautiful pool.
+            </p>
+            <div class="mb-8">
+                <p class="text-xl font-semibold text-blue-800 mb-2">Phone:</p>
+                <a href="tel:+16237389769" class="text-blue-600 hover:underline text-2xl font-bold">+1 623-738-9769</a>
             </div>
+            <div class="mb-8">
+                <p class="text-xl font-semibold text-blue-800 mb-2">Address:</p>
+                <p class="text-lg">8929 N Edmonton Ct, Waddell, AZ 85355, USA</p>
+            </div>
+            <a href="https://maps.google.com/?cid=4508019573445794296" target="_blank" rel="noopener noreferrer"
+               class="inline-block bg-blue-600 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:bg-blue-700 transition duration-300 transform hover:scale-105">
+                View on Google Maps
+            </a>
         </div>
     </section>
 
-    <!-- Footer Section -->
-    <footer class="bg-gray-800 text-gray-300 py-10 mt-16 px-4 sm:px-6 lg:px-8 rounded-t-xl">
-        <div class="container mx-auto text-center md:flex md:justify-between md:items-center">
-            <div class="mb-6 md:mb-0">
-                <h3 class="text-xl font-semibold text-white mb-2">Pittman Heating & Cooling</h3>
-                <p>© 2025 All rights reserved.</p>
-            </div>
-            <!-- Removed Privacy Policy, Terms of Service, and Sitemap links -->
+    <!-- Footer -->
+    <footer class="bg-blue-800 text-white py-8 px-4 mt-16 rounded-t-xl">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2025 Bellyflop Pool Service and Repair. All rights reserved.</p>
+            <p class="mt-2 text-sm">Crafted with care for your pool.</p>
         </div>
     </footer>
-
-    <script>
-        // JavaScript for mobile menu toggle
-        const mobileMenuButton = document.getElementById('mobile-menu-button');
-        const mobileMenu = document.getElementById('mobile-menu');
-
-        mobileMenuButton.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-    </script>
 </body>
 </html>
