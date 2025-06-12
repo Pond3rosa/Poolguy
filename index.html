@@ -21,10 +21,11 @@
             <h1 class="text-3xl font-bold mb-2 md:mb-0">Bellyflop Pool Service</h1>
             <nav>
                 <ul class="flex space-x-6">
-                    <li><a href="#about" class="hover:text-blue-200 transition duration-300">About Us</a></li>
-                    <li><a href="#why-choose-us" class="hover:text-blue-200 transition duration-300">Why Choose Us</a></li>
+                    <!-- Only Contact and Services visible on mobile, all visible on md and up -->
+                    <li class="hidden md:block"><a href="#about" class="hover:text-blue-200 transition duration-300">About Us</a></li>
+                    <li class="hidden md:block"><a href="#why-choose-us" class="hover:text-blue-200 transition duration-300">Why Choose Us</a></li>
                     <li><a href="#services" class="hover:text-blue-200 transition duration-300">Services</a></li>
-                    <li><a href="#testimonials" class="hover:text-blue-200 transition duration-300">Testimonials</a></li>
+                    <li class="hidden md:block"><a href="#testimonials" class="hover:text-blue-200 transition duration-300">Testimonials</a></li>
                     <li><a href="#contact" class="hover:text-blue-200 transition duration-300">Contact</a></li>
                 </ul>
             </nav>
@@ -49,25 +50,29 @@
 
     <!-- About Us Section -->
     <section id="about" class="container mx-auto py-16 px-4">
-        <div class="bg-white p-8 rounded-2xl shadow-xl text-center">
-            <h3 class="text-4xl font-bold text-blue-700 mb-6">About Bellyflop Pool Service</h3>
-            <img src="pool1.jpg" alt="Bellyflop Pool Service Team" class="w-full max-w-md mx-auto rounded-lg shadow-md mb-8 object-cover aspect-video">
-            <p class="text-lg leading-relaxed mb-6">
-                At Bellyflop Pool Service and Repair, we're dedicated to keeping your pool sparkling clean and running efficiently,
-                allowing you to enjoy your backyard oasis worry-free. With years of experience serving the Waddell, AZ area,
-                we pride ourselves on exceptional service, attention to detail, and a steadfast commitment to customer satisfaction.
-            </p>
-            <p class="text-lg leading-relaxed mb-6">
-                Our mission is simple: to provide the highest quality pool maintenance and repair services, ensuring the longevity
-                and pristine condition of your pool. We believe a clean pool is a happy pool, and we strive to make that a reality
-                for every client. Our team of certified professionals is knowledgeable, friendly, and always ready to go the extra mile.
-            </p>
-            <div class="flex items-center justify-center text-yellow-500 text-2xl mb-4">
-                <span class="mr-2">Our Rating:</span>
-                <!-- 5-star rating -->
-                &#9733;&#9733;&#9733;&#9733;&#9733; (5 Stars!)
+        <div class="bg-white p-8 rounded-2xl shadow-xl flex flex-col md:flex-row items-center md:items-start gap-8">
+            <div class="md:w-1/2">
+                <h3 class="text-4xl font-bold text-blue-700 mb-6 text-center md:text-left">About Bellyflop Pool Service</h3>
+                <p class="text-lg leading-relaxed mb-6 text-center md:text-left">
+                    At Bellyflop Pool Service and Repair, we're dedicated to keeping your pool sparkling clean and running efficiently,
+                    allowing you to enjoy your backyard oasis worry-free. With years of experience serving the Waddell, AZ area,
+                    we pride ourselves on exceptional service, attention to detail, and a steadfast commitment to customer satisfaction.
+                </p>
+                <p class="text-lg leading-relaxed mb-6 text-center md:text-left">
+                    Our mission is simple: to provide the highest quality pool maintenance and repair services, ensuring the longevity
+                    and pristine condition of your pool. We believe a clean pool is a happy pool, and we strive to make that a reality
+                    for every client. Our team of certified professionals is knowledgeable, friendly, and always ready to go the extra mile.
+                </p>
+                <div class="flex items-center justify-center md:justify-start text-yellow-500 text-2xl mb-4">
+                    <span class="mr-2">Our Rating:</span>
+                    <!-- 5-star rating -->
+                    &#9733;&#9733;&#9733;&#9733;&#9733; (5 Stars!)
+                </div>
+                <p class="text-md text-gray-600 text-center md:text-left">Based on our satisfied customers.</p>
             </div>
-            <p class="text-md text-gray-600">Based on our satisfied customers.</p>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="pool1.jpg" alt="Bellyflop Pool Service Team" class="w-full max-w-md rounded-lg shadow-md object-cover aspect-video">
+            </div>
         </div>
     </section>
 
